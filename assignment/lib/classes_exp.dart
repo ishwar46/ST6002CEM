@@ -17,7 +17,6 @@ void main() {
 
 class Car {
   //Can contain
-
   //variables,
   String cartype = 'Sedan';
   double size = 2.22; //in meter

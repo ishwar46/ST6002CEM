@@ -2,11 +2,6 @@ void main() {
   final Car car = Car();
 
   car.accelerate();
-  //Bike bike = Bike();
-
-  //print(car.noOfWheels);
-
-  //print(bike.noOfWheels);
 }
 
 abstract class Vehicle {
