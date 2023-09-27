@@ -1,9 +1,9 @@
 void main() {}
 
 class SI {
-  double p;
-  double t;
-  double r;
+  double p = 11;
+  double t = 2;
+  double r = 1;
 
   SI({required this.p, required this.t, required this.r});
 
