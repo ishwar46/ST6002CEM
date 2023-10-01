@@ -28,8 +28,7 @@ class CardWidget extends StatelessWidget {
                 iconData,
                 size: 30,
               ),
-              const SizedBox(
-                  width: 15), // Add some space between the icon and text
+              const SizedBox(width: 15),
               Text(
                 title,
                 style: const TextStyle(fontSize: 20),
