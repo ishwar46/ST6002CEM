@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class SimpleInterest extends StatefulWidget {
   const SimpleInterest({Key? key}) : super(key: key);
@@ -72,11 +70,22 @@ class _SimpleInterestState extends State<SimpleInterest> {
               ),
               SizedBox(
                 width: double.infinity,
-                child: ElevatedButton(
+                child: OutlinedButton(
+                  style: ButtonStyle(
+                    side: MaterialStateProperty.all<BorderSide>(
+                      const BorderSide(
+                        color: Color.fromARGB(255, 43, 85, 159),
+                        width: 2,
+                      ),
+                    ),
+                  ),
                   onPressed: () {
                     _calculateSI();
                   },
-                  child: const Text('CALCULATE'),
+                  child: const Text('CALCULATE',
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 43, 85, 159),
+                      )),
                 ),
               ),
             ],

@@ -47,11 +47,23 @@ class _AreaOfCircleState extends State<AreaOfCircle> {
               ),
               SizedBox(
                 width: double.infinity,
-                child: ElevatedButton(
+                child: OutlinedButton(
+                  style: ButtonStyle(
+                    side: MaterialStateProperty.all<BorderSide>(
+                      const BorderSide(
+                        color: Color.fromARGB(255, 43, 85, 159),
+                        width: 2,
+                      ),
+                    ),
+                  ),
                   onPressed: () {
                     _calculateArea();
                   },
-                  child: const Text('Calculate'),
+                  child: const Text(
+                    'Calculate',
+                    style: TextStyle(
+                        fontSize: 20, color: Color.fromARGB(255, 43, 85, 159)),
+                  ),
                 ),
               )
             ],

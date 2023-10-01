@@ -35,7 +35,6 @@ class _AddNumbersState extends State<AddNumbers> {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextField(
                 controller: _firstNumberController,
@@ -58,13 +57,26 @@ class _AddNumbersState extends State<AddNumbers> {
                 style: const TextStyle(fontSize: 20),
               ),
               SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
+                  width: double.infinity,
+                  child: OutlinedButton(
+                    style: ButtonStyle(
+                      side: MaterialStateProperty.all<BorderSide>(
+                        const BorderSide(
+                          color: Color.fromARGB(255, 43, 85, 159),
+                          width: 2,
+                        ),
+                      ),
+                    ),
                     onPressed: () {
                       _addNumbers();
                     },
-                    child: const Text('ADD')),
-              ),
+                    child: const Text(
+                      'ADD',
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 43, 85, 159),
+                      ),
+                    ),
+                  )),
             ],
           ),
         ),

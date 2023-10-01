@@ -15,7 +15,10 @@ class CardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 4,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8), // Adjust the radius as needed
+      ),
+      color: const Color.fromARGB(255, 43, 85, 159),
       child: InkWell(
         onTap: () {
           Navigator.pushNamed(context, routeName);
@@ -27,11 +30,12 @@ class CardWidget extends StatelessWidget {
               Icon(
                 iconData,
                 size: 30,
+                color: Colors.white,
               ),
               const SizedBox(width: 15),
               Text(
                 title,
-                style: const TextStyle(fontSize: 20),
+                style: const TextStyle(fontSize: 20, color: Colors.white),
               ),
             ],
           ),
