@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class CardWidget extends StatelessWidget {
   final String title;
   final String routeName;
-  final IconData iconData; // Add an icon data property
+  final IconData iconData;
 
   const CardWidget({
     Key? key,
     required this.title,
     required this.routeName,
-    required this.iconData, // Pass in the icon data
+    required this.iconData,
   }) : super(key: key);
 
   @override
@@ -23,13 +23,13 @@ class CardWidget extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Row(
-            // Use Row to align icon and text horizontally
             children: [
               Icon(
-                iconData, // Use the provided icon data
-                size: 30, // Adjust the size as needed
+                iconData,
+                size: 30,
               ),
-              SizedBox(width: 16), // Add some space between the icon and text
+              const SizedBox(
+                  width: 15), // Add some space between the icon and text
               Text(
                 title,
                 style: const TextStyle(fontSize: 20),
