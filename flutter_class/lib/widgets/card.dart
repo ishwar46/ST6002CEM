@@ -16,7 +16,7 @@ class CardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(8), // Adjust the radius as needed
+        borderRadius: BorderRadius.circular(8),
       ),
       color: const Color.fromARGB(255, 43, 85, 159),
       child: InkWell(

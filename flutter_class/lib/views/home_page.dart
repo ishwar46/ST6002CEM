@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.all(8.0),
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child: Row(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
                 CardWidget(
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 CardWidget(
                   title: 'Hello World',
-                  routeName: '/hello',
+                  routeName: '/login',
                   iconData: Icons.circle,
                 ),
               ],

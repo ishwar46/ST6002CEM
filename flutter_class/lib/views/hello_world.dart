@@ -17,11 +17,28 @@ class _HelloWorldsState extends State<HelloWorlds> {
         elevation: 0,
         title: const Text('Hello World'),
       ),
-      body: const Center(
-        child: Text(
-          "Hello World",
+      body: RichText(
+        text: const TextSpan(
+          text: 'Hello ',
           style: TextStyle(
-              fontSize: 30, fontWeight: FontWeight.bold, color: Colors.red),
+            color: Colors.black,
+            fontSize: 30,
+          ),
+          children: [
+            TextSpan(
+              text: 'Bold\n',
+              style: TextStyle(
+                  color: Colors.red, fontSize: 30, fontWeight: FontWeight.bold),
+            ),
+            TextSpan(
+              text: 'world!',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+                fontSize: 30,
+              ),
+            ),
+          ],
         ),
       ),
     );
