@@ -43,6 +43,11 @@ class _HomePageState extends State<HomePage> {
                   routeName: '/area',
                   iconData: Icons.circle,
                 ),
+                CardWidget(
+                  title: 'Hello World',
+                  routeName: '/hello',
+                  iconData: Icons.circle,
+                ),
               ],
             ),
           ),
