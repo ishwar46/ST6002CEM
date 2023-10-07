@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class AddNumbers extends StatefulWidget {
   const AddNumbers({super.key});
@@ -52,6 +50,47 @@ class _AddNumbersState extends State<AddNumbers> {
                 ),
               ),
               const SizedBox(height: 15),
+              RadioListTile(
+                title: const Text('Add'),
+                value: 0,
+                toggleable: true,
+                groupValue: _result,
+                onChanged: (int? value) {
+                  setState(() {
+                    _result = value!;
+                  });
+                },
+              ),
+              RadioListTile(
+                title: const Text('Subtract'),
+                value: 0,
+                groupValue: _result,
+                onChanged: (int? value) {
+                  setState(() {
+                    _result = value!;
+                  });
+                },
+              ),
+              RadioListTile(
+                title: const Text('Multiply'),
+                value: 0,
+                groupValue: _result,
+                onChanged: (int? value) {
+                  setState(() {
+                    _result = value!;
+                  });
+                },
+              ),
+              RadioListTile(
+                title: const Text('Divide'),
+                value: 0,
+                groupValue: _result,
+                onChanged: (int? value) {
+                  setState(() {
+                    _result = value!;
+                  });
+                },
+              ),
               Text(
                 'Result: $_result',
                 style: const TextStyle(fontSize: 20),
