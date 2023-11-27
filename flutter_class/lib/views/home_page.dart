@@ -45,9 +45,30 @@ class _HomePageState extends State<HomePage> {
                 ),
                 CardWidget(
                   title: 'Hello World',
-                  routeName: '/login',
+                  routeName: '/hello',
                   iconData: Icons.circle,
                 ),
+                CardWidget(
+                  title: 'Image View',
+                  routeName: '/image',
+                  iconData: Icons.circle,
+                ),
+                CardWidget(
+                  title: 'List View',
+                  routeName: '/list',
+                  iconData: Icons.circle,
+                ),
+                CardWidget(
+                  title: 'Exp',
+                  routeName: '/expanded',
+                  iconData: Icons.circle,
+                ),
+                CardWidget(
+                  title: 'Class Task',
+                  routeName: '/classtask',
+                  iconData: Icons.circle,
+                ),
+                //expanded
               ],
             ),
           ),

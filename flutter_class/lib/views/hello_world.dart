@@ -15,31 +15,27 @@ class _HelloWorldsState extends State<HelloWorlds> {
         foregroundColor: Colors.white,
         backgroundColor: const Color.fromARGB(255, 43, 85, 159),
         elevation: 0,
-        title: const Text('Hello World'),
+        title: const Text('Container'),
       ),
-      body: RichText(
-        text: const TextSpan(
-          text: 'Hello ',
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 30,
-          ),
-          children: [
-            TextSpan(
-              text: 'Bold\n',
-              style: TextStyle(
-                  color: Colors.red, fontSize: 30, fontWeight: FontWeight.bold),
-            ),
-            TextSpan(
-              text: 'world!',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-                fontSize: 30,
-              ),
-            ),
-          ],
-        ),
+      // body: Center(
+      //   child: Container(
+      //     decoration: BoxDecoration(
+      //       color: Colors.yellow,
+      //       border: Border.all(
+      //         color: Colors.black,
+      //         width: 5,
+      //       ),
+      //       shape: BoxShape.circle,
+      //     ),
+      //     alignment: Alignment.center,
+      //     height: 200,
+      //     width: 200,
+      //     child: const Text('Hello World'),
+      //   ),
+      // ),
+      body: const Align(
+        alignment: Alignment.centerRight,
+        child: Text("Hello World"),
       ),
     );
   }
